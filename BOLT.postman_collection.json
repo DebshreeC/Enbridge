@@ -1,0 +1,3368 @@
+{
+	"info": {
+		"_postman_id": "c570a07c-1bb4-4e0c-a498-f7512b2c7ed1",
+		"name": "BOLT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38600777"
+	},
+	"item": [
+		{
+			"name": "DRA",
+			"item": [
+				{
+					"name": "Local",
+					"item": [
+						{
+							"name": "Archive DRA",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/DRA/archive/null",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"DRA",
+										"archive",
+										"null"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Published DRA",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/DRA/publish/\"Test\"",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"DRA",
+										"publish",
+										"\"Test\""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update_DRAFluidGroup",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"fluidGroup\": 1,\r\n      \"value\": 0\r\n    },\r\n     {\r\n      \"fluidGroup\": 2,\r\n      \"value\": 0\r\n    }  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/DRA/fluid-groups/2A",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"DRA",
+										"fluid-groups",
+										"2A"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DRA_Cost",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/DRA/dra-cost",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"DRA",
+										"dra-cost"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DRA_fluid-groups",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/DRA/fluid-groups",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"DRA",
+										"fluid-groups"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DRA",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/dra",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"dra"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DRA_Details",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/DRA/detail/20",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"DRA",
+										"detail",
+										"20"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create-Draft-DRA",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"line\": \"14\",\r\n    \"title\": \"Test dra for line 14\",\r\n    \"applicableDateStart\": \"2025-01-16T13:46:20.540Z\",\r\n    \"applicableDateEnd\": \"2025-01-10T13:46:20.540Z\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/DRA/create",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"DRA",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update_DRA_Details",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"station\": \"CM\",\r\n      \"flowRatem3hr\": 5000,\r\n      \"userGivenUsageLbHr\": 50,\r\n      \"draType\": \"Heavy\"\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/DRA/detail/75",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"DRA",
+										"detail",
+										"75"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete-DRA",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/DRA/delete/154",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"DRA",
+										"delete",
+										"154"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update-DRA",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"draSummaryID\": 75,\r\n      \"title\": \"Update dra for line 14\",\r\n      \"applicableDateStart\": \"2025-01-10T19:24:14.595Z\",\r\n      \"applicableDateEnd\": \"2025-01-10T19:24:14.595Z\",\r\n      \"heavyPercentage\": 50,\r\n      \"lightPercentage\": 50\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/DRA/update",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"DRA",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Duplicate-DRA",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/DRA/duplicate/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"DRA",
+										"duplicate",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Mark-Favourite-DRA",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/DRA/mark-favourite/",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"DRA",
+										"mark-favourite",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Overwrite-DRA-cost",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"draType\": \"Heavy\",\r\n      \"density\": 1,\r\n      \"costPerGalCAD\": 1,\r\n      \"costPerLBCAD\": 1\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/DRA/dra-cost/update/overwritecost",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"DRA",
+										"dra-cost",
+										"update",
+										"overwritecost"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Live",
+					"item": [
+						{
+							"name": "DRA_Cost",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB4DC4B-423C-4DA8-A0AD-D4688761662D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/DRA/dra-cost",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"DRA",
+										"dra-cost"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DRA_fluid-groups",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/DRA/fluid-groups",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"DRA",
+										"fluid-groups"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DRA",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://bolt-dev-api.enbridge.com/api/dra",
+									"protocol": "https",
+									"host": [
+										"bolt-dev-api",
+										"enbridge",
+										"com"
+									],
+									"path": [
+										"api",
+										"dra"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DRA_Details",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/DRA/detail/20",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"DRA",
+										"detail",
+										"20"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update_DRA_Details",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"station\": \"CM\",\r\n      \"flowRatem3hr\": 5000,\r\n      \"userGivenUsageLbHr\": 50,\r\n      \"draType\": \"Heavy\"\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/DRA/detail/75",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"DRA",
+										"detail",
+										"75"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete-DRA",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/DRA/delete/154",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"DRA",
+										"delete",
+										"154"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create-Draft-DRA",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"line\": \"14\",\r\n    \"title\": \"Test dra for line 14\",\r\n    \"applicableDateStart\": \"2025-01-16T13:46:20.540Z\",\r\n    \"applicableDateEnd\": \"2025-01-10T13:46:20.540Z\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/DRA/create",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"DRA",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Archive DRA",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/DRA/archive/6",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"DRA",
+										"archive",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Published DRA",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/DRA/publish/174",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"DRA",
+										"publish",
+										"174"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update-DRAFluidGroup",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"fluidGroup\": 12,\r\n      \"value\": 50\r\n    },\r\n     {\r\n      \"fluidGroup\": 15,\r\n      \"value\": 50\r\n    }  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/DRA/fluid-groups/2A",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"DRA",
+										"fluid-groups",
+										"2A"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Duplicate-DRA",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/DRA/duplicate/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"DRA",
+										"duplicate",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update-DRA",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"draSummaryID\": 75,\r\n      \"title\": \"Update dra for line 14\",\r\n      \"applicableDateStart\": \"2025-01-10T19:24:14.595Z\",\r\n      \"applicableDateEnd\": \"2025-01-10T19:24:14.595Z\",\r\n      \"heavyPercentage\": 50,\r\n      \"lightPercentage\": 50\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/DRA/update",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"DRA",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Mark-Favourite-DRA",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/DRA/mark-favourite/",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"DRA",
+										"mark-favourite",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Overwrite-DRA-cost",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"draType\": \"Heavy\",\r\n      \"density\": ,\r\n      \"costPerGalCAD\": ,\r\n      \"costPerLBCAD\": \r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/DRA/dra-cost/update/overwritecost",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"DRA",
+										"dra-cost",
+										"update",
+										"overwritecost"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Flowrates",
+			"item": [
+				{
+					"name": "Local",
+					"item": [
+						{
+							"name": "Get Flowrates",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/FlowRates",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"FlowRates"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Draft",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Draft",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n   \r\n    \"data\" : [\t\r\n\t    {\r\n            \r\n            \"line\" : \"1\",\r\n            \"draftFlowRatem3hr\" : 800\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"1\",\r\n            \"draftFlowRatem3hr\" : 600\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"1\",\r\n            \"draftFlowRatem3hr\" : 1000\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"1\",\r\n            \"draftFlowRatem3hr\" : 1200\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"1\",\r\n            \"draftFlowRatem3hr\" : 1350\r\n        },\r\n\r\n\r\n        {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 2500\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 2350\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 1900\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 1500\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 2900\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 2100\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 2200\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 2700\r\n        },\r\n\r\n\t\r\n\t    {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 2200\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 2500 \r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 1900\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 2900\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 1500\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 2350\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 2100\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 3000\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 2750\r\n        },\r\n\r\n\r\n\t    {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 5350\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 3800 \r\n        },\r\n        {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 5500\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 5850\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 4450\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 4750 \r\n        },\r\n        {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 5670\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 3600\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 5150\r\n        },\r\n\r\n\t\r\n        {\r\n            \r\n            \"line\" : \"65\",\r\n            \"draftFlowRatem3hr\" : 750 \r\n        },\r\n        {\r\n            \r\n            \"line\" : \"65\",\r\n            \"draftFlowRatem3hr\" : 1370\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"65\",\r\n            \"draftFlowRatem3hr\" : 1000\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"65\",\r\n            \"draftFlowRatem3hr\" : 1200\r\n        },\r\n\r\n\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 4200\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5100\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 4500\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5950\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 3750\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 2980\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 3300\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5200\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5500\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 3100\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5400\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5750\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5890\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 4950\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 4800\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 4000\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5300\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5600\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5350\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5650\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 3650\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 1770\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 2650\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 2350\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 3350\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 4350\r\n        },\r\n\r\n\r\n\t    {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 5150\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" :  4750\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 2980\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 5450\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 4500\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 3400\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 5000 \r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 5600\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 5300\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 4000\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 4250\r\n        },\r\n\r\n\t\r\n\t    {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 1360\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 2200 \r\n        },\r\n        {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 2400\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 2530\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 1750\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 2580\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 2620\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 1950\r\n        },\r\n\r\n\r\n\t    {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 3000\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 3150\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 4250\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 4550\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 3900\r\n        },\r\n\r\n\t    {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 3300\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 4400\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 3200\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 3700\r\n        },\r\n\r\n\r\n\t    {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 3800\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 3550\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 2600\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 3250\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 2950\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 2350\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 3450\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 2800\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 2000\r\n        },\r\n\r\n\t    {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 8300\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 8600\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 7000\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 6400\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 6850\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 5700\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 9009\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 7900\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 8100\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 7600\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 4800\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 4200\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 6600\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 6000\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 5200\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 8830\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 3900\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 7200\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 7400\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 3650\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 8500\r\n        }\r\n\r\n    ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/FlowRates/Update-Draft",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"FlowRates",
+										"Update-Draft"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Publish",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/FlowRates/publish",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"FlowRates",
+										"publish"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "History-Details",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/FlowRates/history-detail/1328",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"FlowRates",
+										"history-detail",
+										"1328"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "History-Summery",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/FlowRates/history-summary/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"FlowRates",
+										"history-summary",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Live",
+					"item": [
+						{
+							"name": "Get Flowrates",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/FlowRates",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"FlowRates"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Draft",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Draft",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n   \r\n    \"data\" : [\t\r\n\t    {\r\n            \r\n            \"line\" : \"1\",\r\n            \"draftFlowRatem3hr\" : 800\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"1\",\r\n            \"draftFlowRatem3hr\" : 600\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"1\",\r\n            \"draftFlowRatem3hr\" : 1000\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"1\",\r\n            \"draftFlowRatem3hr\" : 1200\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"1\",\r\n            \"draftFlowRatem3hr\" : 1350\r\n        },\r\n\r\n\r\n        {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 2500\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 2350\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 1900\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 1500\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 2900\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 2100\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 2200\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"2A\",\r\n            \"draftFlowRatem3hr\" : 2700\r\n        },\r\n\r\n\t\r\n\t    {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 2200\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 2500 \r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 1900\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 2900\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 1500\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 2350\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 2100\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 3000\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"2B\",\r\n            \"draftFlowRatem3hr\" : 2750\r\n        },\r\n\r\n\r\n\t    {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 5350\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 3800 \r\n        },\r\n        {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 5500\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 5850\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 4450\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 4750 \r\n        },\r\n        {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 5670\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 3600\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"4\",\r\n            \"draftFlowRatem3hr\" : 5150\r\n        },\r\n\r\n\t\r\n        {\r\n            \r\n            \"line\" : \"65\",\r\n            \"draftFlowRatem3hr\" : 750 \r\n        },\r\n        {\r\n            \r\n            \"line\" : \"65\",\r\n            \"draftFlowRatem3hr\" : 1370\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"65\",\r\n            \"draftFlowRatem3hr\" : 1000\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"65\",\r\n            \"draftFlowRatem3hr\" : 1200\r\n        },\r\n\r\n\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 4200\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5100\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 4500\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5950\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 3750\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 2980\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 3300\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5200\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5500\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 3100\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5400\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5750\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5890\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 4950\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 4800\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 4000\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5300\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5600\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5350\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 5650\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 3650\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 1770\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 2650\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 2350\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 3350\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"67\",\r\n            \"draftFlowRatem3hr\" : 4350\r\n        },\r\n\r\n\r\n\t    {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 5150\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" :  4750\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 2980\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 5450\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 4500\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 3400\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 5000 \r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 5600\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 5300\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 4000\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"93\",\r\n            \"draftFlowRatem3hr\" : 4250\r\n        },\r\n\r\n\t\r\n\t    {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 1360\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 2200 \r\n        },\r\n        {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 2400\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 2530\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 1750\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 2580\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 2620\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"14\",\r\n            \"draftFlowRatem3hr\" : 1950\r\n        },\r\n\r\n\r\n\t    {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 3000\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 3150\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 4250\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 4550\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 3900\r\n        },\r\n\r\n\t    {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 3300\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 4400\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 3200\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"6A\",\r\n            \"draftFlowRatem3hr\" : 3700\r\n        },\r\n\r\n\r\n\t    {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 3800\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 3550\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 2600\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 3250\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 2950\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 2350\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 3450\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 2800\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"5\",\r\n            \"draftFlowRatem3hr\" : 2000\r\n        },\r\n\r\n\t    {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 8300\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 8600\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 7000\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 6400\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 6850\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 5700\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 9009\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 7900\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 8100\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 7600\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 4800\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 4200\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 6600\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 6000\r\n\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 5200\r\n        },\r\n\t    {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 8830\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 3900\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 7200\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 7400\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 3650\r\n        },\r\n        {\r\n            \r\n            \"line\" : \"61\",\r\n            \"draftFlowRatem3hr\" : 8500\r\n        }\r\n\r\n    ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/FlowRates/Update-Draft",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"FlowRates",
+										"Update-Draft"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Publish",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/FlowRates/publish",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"FlowRates",
+										"publish"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "History-Details",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/FlowRates/history-detail/1328",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"FlowRates",
+										"history-detail",
+										"1328"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "History-Summery",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/FlowRates/history-summary/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"FlowRates",
+										"history-summary",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "PowerCurve",
+			"item": [
+				{
+					"name": "Local",
+					"item": [
+						{
+							"name": "power-curve",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mark-favourite",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/mark-favourite/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"mark-favourite",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve/{powercurveid}",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve/station-details",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/station-details/1/AP",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"station-details",
+										"1",
+										"AP"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve-details",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/details/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"details",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create-draft",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"line\": \"string\",\r\n    \"title\": \"string\",\r\n    \"applicableDateStart\": \"2025-01-20T19:17:25.905Z\",\r\n    \"applicableDateEnd\": \"2025-01-20T19:17:25.905Z\",\r\n    \"historicDates\": [\r\n      {\r\n        \"startDate\": \"2025-01-20T19:17:25.905Z\",\r\n        \"endDate\": \"2025-01-20T19:17:25.905Z\"\r\n      }\r\n    ]\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/create-draft",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"create-draft"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update-draft",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"title\": \"string\",\r\n    \"applicableDateStart\": \"2025-01-20T19:30:29.388Z\",\r\n    \"applicableDateEnd\": \"2025-01-20T19:30:29.388Z\",\r\n    \"historicDates\": [\r\n      {\r\n        \"startDate\": \"2025-01-20T19:30:29.388Z\",\r\n        \"endDate\": \"2025-01-20T19:30:29.388Z\"\r\n      }\r\n    ]\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/update-draft/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"update-draft",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve/station",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/station/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"station",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve/station",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"applicableDateStart\": \"2025-01-20T20:08:57.410Z\",\r\n    \"applicableDateEnd\": \"2025-01-20T20:08:57.410Z\",\r\n    \"historicDates\": [\r\n      {\r\n        \"startDate\": \"2025-01-20T20:08:57.410Z\",\r\n        \"endDate\": \"2025-01-20T20:08:57.410Z\"\r\n      }\r\n    ]\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/station/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"station",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve-delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/delete/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve-generate",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/generate/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"generate",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve/station",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/station/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"station",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve-override-fit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"selectedCurveFitMethod\": \"string\",\r\n    \"userInputA\": 0,\r\n    \"userInputB\": 0,\r\n    \"userInputC\": 0\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/station/override-fit/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"station",
+										"override-fit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve-override-power",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"flowData\": [\r\n      {\r\n        \"flowRate\": 0,\r\n        \"userPowerKW\": 0\r\n      }\r\n    ]\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/station/override-power/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"station",
+										"override-power",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve-publish-draft",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/publish-draft/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"publish-draft",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve-duplicate",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/power-curve/duplicate/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"power-curve",
+										"duplicate",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Live",
+					"item": [
+						{
+							"name": "power-curve",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mark-favourite",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/mark-favourite/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"mark-favourite",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve/{powercurveid}",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve/station-details",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/station-details/1/AP",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"station-details",
+										"1",
+										"AP"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve-details",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/details/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"details",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create-draft",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"line\": \"string\",\r\n    \"title\": \"string\",\r\n    \"applicableDateStart\": \"2025-01-20T19:17:25.905Z\",\r\n    \"applicableDateEnd\": \"2025-01-20T19:17:25.905Z\",\r\n    \"historicDates\": [\r\n      {\r\n        \"startDate\": \"2025-01-20T19:17:25.905Z\",\r\n        \"endDate\": \"2025-01-20T19:17:25.905Z\"\r\n      }\r\n    ]\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/create-draft",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"create-draft"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update-draft",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"title\": \"string\",\r\n    \"applicableDateStart\": \"2025-01-20T19:30:29.388Z\",\r\n    \"applicableDateEnd\": \"2025-01-20T19:30:29.388Z\",\r\n    \"historicDates\": [\r\n      {\r\n        \"startDate\": \"2025-01-20T19:30:29.388Z\",\r\n        \"endDate\": \"2025-01-20T19:30:29.388Z\"\r\n      }\r\n    ]\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/update-draft/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"update-draft",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve/station",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/station/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"station",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve/station",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"applicableDateStart\": \"2025-01-20T20:08:57.410Z\",\r\n    \"applicableDateEnd\": \"2025-01-20T20:08:57.410Z\",\r\n    \"historicDates\": [\r\n      {\r\n        \"startDate\": \"2025-01-20T20:08:57.410Z\",\r\n        \"endDate\": \"2025-01-20T20:08:57.410Z\"\r\n      }\r\n    ]\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/station/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"station",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve-delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/delete/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve-generate",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/generate/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"generate",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve/station",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/station/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"station",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve-override-fit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"selectedCurveFitMethod\": \"string\",\r\n    \"userInputA\": 0,\r\n    \"userInputB\": 0,\r\n    \"userInputC\": 0\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/station/override-fit/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"station",
+										"override-fit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve-override-power",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"data\": {\r\n    \"flowData\": [\r\n      {\r\n        \"flowRate\": 0,\r\n        \"userPowerKW\": 0\r\n      }\r\n    ]\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/station/override-power/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"station",
+										"override-power",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve-publish-draft",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/publish-draft/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"publish-draft",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "power-curve-duplicate",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/power-curve/duplicate/1",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"power-curve",
+										"duplicate",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "Local",
+					"item": [
+						{
+							"name": "Add Comment",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"ref\": \"PowerCurve\",\r\n  \"refId\": 1,\r\n  \"comment\": \"Testing\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7248/api/comments/add",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"comments",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Comment",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7248/api/comments/PowerCurve/431",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7248",
+									"path": [
+										"api",
+										"comments",
+										"PowerCurve",
+										"431"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Live",
+					"item": [
+						{
+							"name": "Add Comment",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "debshree",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "chakrad1",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"ref\": \"PowerCurve\",\r\n  \"refId\": 1,\r\n  \"comment\": \"Testing\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/comments/add",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"comments",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Comment",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-username",
+										"value": "nidhi",
+										"type": "text"
+									},
+									{
+										"key": "x-userid",
+										"value": "kumarin4",
+										"type": "text"
+									},
+									{
+										"key": "x-userguid",
+										"value": "0AB9DC5B-423C-4DA8-A0AD-D4688761332D",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://app-bolt-dev-cac.azurewebsites.net/api/comments/PowerCurve/431",
+									"protocol": "https",
+									"host": [
+										"app-bolt-dev-cac",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"comments",
+										"PowerCurve",
+										"431"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
